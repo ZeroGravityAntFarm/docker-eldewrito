@@ -2,11 +2,12 @@
 FROM ubuntu:20.04
 
 # Set environment variables
-ENV CONTAINER_VERSION=0.6 \
+ENV CONTAINER_VERSION=0.7 \
     ELDEWRITO_VERSION=0.6.1 \
     MTNDEW_CHECKSUM=496b9296239539c747347805e15d2540 \
     DISPLAY=:1 \
     WINEPREFIX="/wine" \
+    WINEARCH=win32 \
     DEBIAN_FRONTEND=noninteractive \
     PUID=0 \
     PGID=0
